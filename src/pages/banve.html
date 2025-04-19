@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trang Chủ - TĐ Touris</title>
+    <link rel="stylesheet" href="../css/banve.css" />
+  </head>
+
+  <body>
+    <div class="header">
+      <div>
+        <div class="logo">
+          <img src="../public/images/logousave.png" alt="Logo TĐ Touris" />
+        </div>
+        <nav class="menu">
+          <ul>
+            <li><a href="doan.html">Trang Chủ</a></li>
+            <li><a href="gioithieu.html">Giới Thiệu</a></li>
+            <li><a href="dichvu.html">Dịch Vụ</a></li>
+            <li><a href="lienhe.html">Liên Hệ</a></li>
+            <li><a href="thongtin.html">Thông Tin</a></li>
+            <li><a href="danhgia.html">Đánh Giá</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="user-login">
+        <a href="login.html" class="login-button">Đăng Nhập</a>
+        <span id="user-info" style="display: none"></span>
+        <button id="logout" class="logout" style="display: none">
+          Đăng Xuất
+        </button>
+      </div>
+    </div>
+
+    <!-- Slider -->
+    <section class="slider">
+      <video autoplay muted loop id="video-background">
+        <source src="../public/videos/videonen.mp4" type="video/mp4" />
+      </video>
+      <div class="slider-content">
+        <h1>Khám phá Việt Nam</h1>
+        <p>Trải nghiệm những điểm đến tuyệt vời nhất</p>
+      </div>
+    </section>
+
+    <section class="best-deals section-container" id="best-deal">
+      <h2 class="section-title">Tour Thiên Nhiên</h2>
+      <p class="section-description">Hoang sơ hùng vĩ, vẻ đẹp thiên nhiên</p>
+      <div class="tour-grid">
+        <!-- Tour 1 -->
+        <div class="tour-item">
+          <img src="../public/images/h4.webp" alt="Tour Đà Nẵng" />
+          <div class="tour-info">
+            <h3>Vườn Quốc Gia, Thác Suối Tranh</h3>
+            <p class="price">Giá từ <span>2.999.000đ</span></p>
+            <button>Xem chi tiết</button>
+          </div>
+        </div>
+
+        <!-- Tour 2 -->
+        <div class="tour-item">
+          <img src="../public/images/h4.webp" alt="Tour Nha Trang" />
+          <div class="tour-info">
+            <h3>Kayak Rừng Ngập Mặn Ganh Dầu</h3>
+            <p class="price">Giá từ <span>3.499.000đ</span></p>
+            <button>Xem chi tiết</button>
+          </div>
+        </div>
+
+        <!-- Tour 3 -->
+        <div class="tour-item">
+          <img src="../public/images/h4.webp" alt="Tour Phú Quốc" />
+          <div class="tour-info">
+            <h3>Lặn San Hô Đảo An Thới</h3>
+            <p class="price">Giá từ <span>4.999.000đ</span></p>
+            <button>Xem chi tiết</button>
+          </div>
+        </div>
+
+        <!-- Tour 4 -->
+        <div class="tour-item">
+          <img src="../public/images/h4.webp" alt="Tour Sapa" />
+          <div class="tour-info">
+            <h3>Cắm Trại Đảo Hoang Hòn Mây Rút</h3>
+            <p class="price">Giá từ <span>3.799.000đ</span></p>
+            <button>Xem chi tiết</button>
+          </div>
+        </div>
+      </div>
+      <div class="button-outgrid">
+        <button>Xem thêm</button>
+      </div>
+    </section>
+
+    <section class="best-deals section-container" id="best-deal">
+      <h2 class="section-title">Tour Văn Hóa</h2>
+      <p class="section-description">Tạm biệt áp lực, vẫy gọi bình yên</p>
+      <div class="tour-grid">
+        <!-- Tour 1 -->
+        <div class="tour-item">
+          <img src="../public/images/h4.webp" alt="Tour Đà Nẵng" />
+          <div class="tour-info">
+            <h3>Cano Hòn Mây Rút - Hòn Móng Tay - Gầm Ghì</h3>
+            <p class="price">Giá từ <span>2.999.000đ</span></p>
+            <button>Xem chi tiết</button>
+          </div>
+        </div>
+
+        <!-- Tour 2 -->
+        <div class="tour-item">
+          <img src="../public/images/h4.webp" alt="Tour Nha Trang" />
+          <div class="tour-info">
+            <h3>Safari - Vinwonders - Sunset Town</h3>
+            <p class="price">Giá từ <span>3.499.000đ</span></p>
+            <button>Xem chi tiết</button>
+          </div>
+        </div>
+
+        <!-- Tour 3 -->
+        <div class="tour-item">
+          <img src="../public/images/h4.webp" alt="Tour Phú Quốc" />
+          <div class="tour-info">
+            <h3>Tour Phú Quốc</h3>
+            <p class="price">Giá từ <span>4.999.000đ</span></p>
+            <button>Xem chi tiết</button>
+          </div>
+        </div>
+
+        <!-- Tour 4 -->
+        <div class="tour-item">
+          <img src="../public/images/h4.webp" alt="Tour Sapa" />
+          <div class="tour-info">
+            <h3>Tour Sapa</h3>
+            <p class="price">Giá từ <span>3.799.000đ</span></p>
+            <button>Xem chi tiết</button>
+          </div>
+        </div>
+      </div>
+      <div class="button-outgrid">
+        <button>Xem thêm</button>
+      </div>
+    </section>
+
+    <section class="best-deals section-container" id="best-deal">
+      <h2 class="section-title">Tour Vui Chơi Giải Trí</h2>
+      <p class="section-description">Những cuộc vui không thể bỏ lỡ</p>
+      <div class="tour-grid">
+        <!-- Tour 1 -->
+        <div class="tour-item">
+          <img src="../public/images/h4.webp" alt="Tour Đà Nẵng" />
+          <div class="tour-info">
+            <h3>Tour Đà Nẵng - Hội An</h3>
+            <p class="price">Giá từ <span>2.999.000đ</span></p>
+            <button>Xem chi tiết</button>
+          </div>
+        </div>
+
+        <!-- Tour 2 -->
+        <div class="tour-item">
+          <img src="../public/images/h4.webp" alt="Tour Nha Trang" />
+          <div class="tour-info">
+            <h3>Tour Nha Trang - Đà Lạt</h3>
+            <p class="price">Giá từ <span>3.499.000đ</span></p>
+            <button>Xem chi tiết</button>
+          </div>
+        </div>
+
+        <!-- Tour 3 -->
+        <div class="tour-item">
+          <img src="../public/images/h4.webp" alt="Tour Phú Quốc" />
+          <div class="tour-info">
+            <h3>Tour Phú Quốc</h3>
+            <p class="price">Giá từ <span>4.999.000đ</span></p>
+            <button>Xem chi tiết</button>
+          </div>
+        </div>
+
+        <!-- Tour 4 -->
+        <div class="tour-item">
+          <img src="../public/images/h4.webp" alt="Tour Sapa" />
+          <div class="tour-info">
+            <h3>Tour Sapa</h3>
+            <p class="price">Giá từ <span>3.799.000đ</span></p>
+            <button>Xem chi tiết</button>
+          </div>
+        </div>
+      </div>
+      <div class="button-outgrid">
+        <button>Xem thêm</button>
+      </div>
+    </section>
+
+    <section class="best-deals section-container" id="best-deal">
+      <h2 class="section-title">Tour Đặc Biệt</h2>
+      <p class="section-description"></p>
+      <div class="tour-grid">
+        <!-- Tour 1 -->
+        <div class="tour-item">
+          <img src="../public/images/h4.webp" alt="Tour Đà Nẵng" />
+          <div class="tour-info">
+            <h3>Câu Cá Lặn Ngắm San Hô</h3>
+            <p class="price">Giá từ <span>2.999.000đ</span></p>
+            <button>Xem chi tiết</button>
+          </div>
+        </div>
+
+        <!-- Tour 2 -->
+        <div class="tour-item">
+          <img src="../public/images/h4.webp" alt="Tour Nha Trang" />
+          <div class="tour-info">
+            <h3>Câu Mực Đêm</h3>
+            <p class="price">Giá từ <span>3.499.000đ</span></p>
+            <button>Xem chi tiết</button>
+          </div>
+        </div>
+
+        <!-- Tour 3 -->
+        <div class="tour-item">
+          <img src="../public/images/h4.webp" alt="Tour Phú Quốc" />
+          <div class="tour-info">
+            <h3>Đi Bộ Đáy Biển</h3>
+            <p class="price">Giá từ <span>4.999.000đ</span></p>
+            <button>Xem chi tiết</button>
+          </div>
+        </div>
+
+        <!-- Tour 4 -->
+        <div class="tour-item">
+          <img src="../public/images/h4.webp" alt="Tour Sapa" />
+          <div class="tour-info">
+            <h3>Tour Sapa</h3>
+            <p class="price">Giá từ <span>3.799.000đ</span></p>
+            <button>Xem chi tiết</button>
+          </div>
+        </div>
+      </div>
+      <div class="button-outgrid">
+        <button>Xem thêm</button>
+      </div>
+    </section>
+
+    <footer class="footer-container">
+      <div class="footer-content">
+        <div class="footer-grid">
+          <div class="payment-partners">
+            <h4 class="partners-heading">Đối tác thanh toán</h4>
+            <div class="payment-grid">
+              <img
+                src="../public/images/payment/visa-logo-png.png"
+                alt="VISA"
+                class="payment-logo"
+              />
+              <img
+                src="../public/images/payment/BIDV-01.png"
+                alt="BIDV"
+                class="payment-logo"
+              />
+              <img
+                src="../public/images/payment/logo-MB.png"
+                alt="MB Bank"
+                class="payment-logo"
+              />
+              <img
+                src="../public/images/payment/Agribank-logo.png"
+                alt="Agribank"
+                class="payment-logo"
+              />
+              <img
+                src="../public/images/payment/MoMo_Logo.png"
+                alt="MoMo"
+                class="payment-logo"
+              />
+            </div>
+          </div>
+          <!-- Cột Sản phẩm -->
+          <div class="footer-column">
+            <h4 class="footer-heading">Về TD Touris</h4>
+            <ul class="footer-list">
+              <li>
+                <a href="#" class="footer-link">Liên hệ với chúng tôi </a>
+              </li>
+              <li><a href="#" class="footer-link">Trợ giúp</a></li>
+              <li><a href="#" class="footer-link">Về chúng tôi</a></li>
+            </ul>
+          </div>
+          <!-- Cột Sản phẩm -->
+          <div class="footer-column">
+            <h4 class="footer-heading">Sản phẩm</h4>
+            <ul class="footer-list">
+              <li><a href="#" class="footer-link">Khách sạn</a></li>
+              <li><a href="#" class="footer-link">Vé du lịch</a></li>
+            </ul>
+          </div>
+          <!-- Cột Sản phẩm -->
+          <div class="footer-column">
+            <h4 class="footer-heading">Khác</h4>
+            <ul class="footer-list">
+              <li>
+                <a href="#" class="footer-link">Chính sách và quyền hạn</a>
+              </li>
+              <li>
+                <a href="#" class="footer-link">Điều kiện và điều khoản</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span class="copyright">© 2025 TD Touris. All rights reserved</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

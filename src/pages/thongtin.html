@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thông tin</title>
+    <link rel="stylesheet" href="../css/thongtin.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div>
+        <div class="logo">
+          <img src="../public/images/logousave.png" />
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="doan.html">Trang Chủ</a></li>
+            <li><a href="gioithieu.html">Giới Thiệu</a></li>
+            <li class="menu-item">
+              <a href="dichvu.html">Dịch Vụ</a>
+              <ul class="sub-menu">
+                <li><a href="dichvu.html">Tour Du Lịch</a></li>
+                <li><a href="dichvu.html">Khách Sạn</a></li>
+              </ul>
+            </li>
+            <li><a href="lienhe.html">Liên Hệ</a></li>
+            <li><a href="thongtin.html">Thông Tin</a></li>
+            <li><a href="danhgia.html">Đánh Giá</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="user-login">
+        <a href="login.html" class="login-button">Đăng Nhập</a>
+
+        <span id="user-info" style="display: none"> </span>
+        <button id="logout" class="logout" style="display: none">
+          Đăng Xuất
+        </button>
+      </div>
+    </div>
+
+    <!-- Slider -->
+    <section class="slider">
+      <video autoplay muted loop id="video-background">
+        <source src="../public/videos/videonen.mp4" type="video/mp4" />
+      </video>
+      <div class="slider-content">
+        <h1>Khám phá Việt Nam</h1>
+        <p>Trải nghiệm những điểm đến tuyệt vời nhất</p>
+      </div>
+    </section>
+
+    <!-- Danh mục nổi bật -->
+    <section class="favorite-destinations section-container">
+      <h2 class="section-title">Điểm đến yêu thích trong nước</h2>
+      <p class="section-subtitle">Lên rừng xuống biển. Trọn vẹn Việt Nam</p>
+      <p class="section-description">
+        Khám phá những địa điểm du lịch nổi tiếng nhất Việt Nam với các tour
+        được thiết kế đặc biệt
+      </p>
+      <div class="destination-grid">
+        <div
+          class="destination-item"
+          style="background-image: url(../public/images/phuquoc/baisao.jpg)"
+        >
+          <div class="destination-content">
+            <h2>Bãi Biển</h2>
+            <div class="hotel-count">Những bãi biển đẹp nhất Việt Nam</div>
+          </div>
+        </div>
+
+        <div
+          class="destination-item"
+          style="
+            background-image: url(../public/images/phuquoc/vuonquocgia.jpg);
+          "
+        >
+          <div class="destination-content">
+            <h2>Tham Quan Thiên Nhiên</h2>
+            <div class="hotel-count">Thiên nhiên hoang sơ hùng vĩ</div>
+          </div>
+        </div>
+
+        <div
+          class="destination-item"
+          style="background-image: url(../public/images/phuquoc/chua.jpg)"
+        >
+          <div class="destination-content">
+            <h2>Văn Hóa & Lịch Sử</h2>
+            <div class="hotel-count">Di tích lịch sử đầy ý nghĩa</div>
+          </div>
+        </div>
+
+        <div
+          class="destination-item"
+          style="background-image: url(../public/images/phuquoc/langchai.jpg)"
+        >
+          <div class="destination-content">
+            <h2>Cuộc Sống</h2>
+            <div class="hotel-count">Khám phá vẻ đẹp cuộc sống</div>
+          </div>
+        </div>
+
+        <div
+          class="destination-item"
+          style="background-image: url(../public/images/phuquoc/vinpearl.jpg)"
+        >
+          <div class="destination-content">
+            <h2>Vui Chơi & Giải Trí</h2>
+            <div class="hotel-count">Địa điểm vui chơi giải trí hấp dẫn</div>
+          </div>
+        </div>
+
+        <div
+          class="destination-item"
+          style="background-image: url(../public/images/phuquoc/honthom.jpg)"
+        >
+          <div class="destination-content">
+            <h2>Các Đảo</h2>
+            <div class="hotel-count">Các đảo hoang sơ, hùng vĩ</div>
+          </div>
+        </div>
+
+        <div
+          class="destination-item"
+          style="background-image: url(../public/images/phuquoc/chodem.jpeg)"
+        >
+          <div class="destination-content">
+            <h2>Khu Chợ & Ẩm Thực</h2>
+            <div class="hotel-count">Địa điểm ẩm thực đặc sắc</div>
+          </div>
+        </div>
+
+        <div
+          class="destination-item"
+          style="background-image: url(../public/images/phuquoc/caumucdem.png)"
+        >
+          <div class="destination-content">
+            <h2>Đặt Biệt</h2>
+            <div class="hotel-count">Những chuyến đi đặc biệt</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ẩm thực -->
+    <section class="destinations section-container">
+      <h2 class="section-title">Điểm đến nổi bật</h2>
+      <p class="section-description">
+        Những địa điểm được yêu thích nhất trong tháng
+      </p>
+      <div class="destinations-grid">
+        <div class="destination-card card">
+          <img src="../public/images/amthuc/bunken.jpg" alt="Món ăn 1" />
+        </div>
+
+        <div class="destination-card card">
+          <img src="../public/images/amthuc/bunquay.jpg" alt="Món ăn 2" />
+        </div>
+
+        <div class="destination-card card">
+          <img src="../public/images/amthuc/chamuc.jpg" alt="Món ăn 3" />
+        </div>
+
+        <div class="destination-card card">
+          <img src="../public/images/amthuc/garay.jpg" alt="Món ăn 4" />
+        </div>
+
+        <div class="destination-card card">
+          <img src="../public/images/amthuc/ghehamninh.jpg" alt="Món ăn 5" />
+        </div>
+
+        <div class="destination-card card">
+          <img src="../public/images/amthuc/goicatrich.jpg" alt="Món ăn 6" />
+        </div>
+
+        <div class="destination-card card">
+          <img src="../public/images/amthuc/haisam.jpg" alt="Món ăn 7" />
+        </div>
+
+        <div class="destination-card card">
+          <img src="../public/images/amthuc/tietcanhcua.jpg" alt="Món ăn 8" />
+        </div>
+      </div>
+    </section>
+
+    <section class="living-spaces section-container">
+      <h2 class="section-title">Nơi ở đặc biệt</h2>
+      <p class="section-description">
+        Trải nghiệm những nơi ở độc đáo và ấn tượng
+      </p>
+      <div class="living-spaces-grid">
+        <div class="living-space-card card">
+          <img src="../public/images/noio/caocap.jpg" alt="Nơi ở 1" />
+        </div>
+
+        <div class="living-space-card card">
+          <img src="../public/images/noio/khachsantrung.png" alt="Nơi ở 2" />
+        </div>
+
+        <div class="living-space-card card">
+          <img src="../public/images/noio/homestay.jpg" alt="Nơi ở 3" />
+        </div>
+
+        <div class="living-space-card card">
+          <img src="../public/images/noio/villa&bietthu.jpg" alt="Nơi ở 4" />
+        </div>
+
+        <div class="living-space-card card">
+          <img src="../public/images/noio/eco&glamping.jpg" alt="Nơi ở 5" />
+        </div>
+
+        <div class="living-space-card card">
+          <img src="../public/images/noio/giadinh&capdoi.jpg" alt="Nơi ở 6" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-container">
+      <div class="footer-content">
+        <div class="footer-grid">
+          <div class="payment-partners">
+            <h4 class="partners-heading">Đối tác thanh toán</h4>
+            <div class="payment-grid">
+              <img
+                src="../public/images//payment/visa-logo-png.png"
+                alt="VISA"
+                class="payment-logo"
+              />
+              <img
+                src="../public/images//payment/BIDV-01.png"
+                alt="BIDV"
+                class="payment-logo"
+              />
+              <img
+                src="../public/images//payment/logo-MB.png"
+                alt="MB Bank"
+                class="payment-logo"
+              />
+              <img
+                src="../public/images//payment/Agribank-logo.png"
+                alt="Agribank"
+                class="payment-logo"
+              />
+              <img
+                src="../public/images//payment/MoMo_Logo.png"
+                alt="MoMo"
+                class="payment-logo"
+              />
+            </div>
+          </div>
+          <!-- Cột Sản phẩm -->
+          <div class="footer-column">
+            <h4 class="footer-heading">Về TD Touris</h4>
+            <ul class="footer-list">
+              <li>
+                <a href="#" class="footer-link">Liên hệ với chúng tôi </a>
+              </li>
+              <li><a href="#" class="footer-link">Trợ giúp</a></li>
+              <li><a href="#" class="footer-link">Về chúng tôi</a></li>
+            </ul>
+          </div>
+          <!-- Cột Sản phẩm -->
+          <div class="footer-column">
+            <h4 class="footer-heading">Sản phẩm</h4>
+            <ul class="footer-list">
+              <li><a href="#" class="footer-link">Khách sạn</a></li>
+              <li><a href="#" class="footer-link">Vé du lịch</a></li>
+            </ul>
+          </div>
+          <!-- Cột Sản phẩm -->
+          <div class="footer-column">
+            <h4 class="footer-heading">Khác</h4>
+            <ul class="footer-list">
+              <li>
+                <a href="#" class="footer-link">Chính sách và quyền hạn</a>
+              </li>
+              <li>
+                <a href="#" class="footer-link">Điều kiện và điều khoản</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <span class="copyright">© 2025 TD Touris. All rights reserved</span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/thongtin.js"></script>
+  </body>
+</html>
